@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BI-ML2 — Interaktivní vizualizace</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header id="topbar">
+  <button id="menuBtn" aria-label="Menu">☰</button>
+  <div class="brand">BI-ML2 · <span>interaktivní průvodce</span></div>
+  <div class="spacer"></div>
+  <a class="toplink" href="ml2_skripta.pdf" target="_blank">📖 Skripta (PDF)</a>
+</header>
+
+<div id="layout">
+  <aside id="sidebar">
+    <div class="search-wrap"><input id="search" type="search" placeholder="Hledat téma…" autocomplete="off"></div>
+    <nav id="nav"></nav>
+  </aside>
+  <div id="scrim"></div>
+  <main id="content">
+    <div id="view"></div>
+  </main>
+</div>
+
+<!-- core -->
+<script src="assets/core.js"></script>
+<!-- chapters -->
+<script src="assets/ch00_intro.js"></script>
+<script src="assets/ch01_ml1.js"></script>
+<script src="assets/ch02_reg.js"></script>
+<script src="assets/ch03_svm.js"></script>
+<script src="assets/ch04_dim.js"></script>
+<script src="assets/ch05_bayes.js"></script>
+<script src="assets/ch06_lda.js"></script>
+<script src="assets/ch07_perc.js"></script>
+<script src="assets/ch08_mlp.js"></script>
+<script src="assets/ch09_train.js"></script>
+<script src="assets/ch10_cnn.js"></script>
+<script src="assets/ch11_nlp.js"></script>
+<script src="assets/ch12_rl.js"></script>
+<!-- boot -->
+<script>VIZ.boot();</script>
+</body>
+</html>
